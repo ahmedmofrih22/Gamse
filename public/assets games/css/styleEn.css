@@ -1,0 +1,60 @@
+body{
+    direction: ltr;
+    text-align: left;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footerTitle:after {
+    left: -9px;
+    right: unset;
+}
+.chat-room span{
+    left: 25px;
+    right: unset;
+}
+.chat-title img {
+    right: unset;
+    left: 15px;
+    transform: rotate(180deg);
+}
+.sender {
+    right: 0;
+    left: unset;
+    border-radius: 0 10px 10px 0;
+}
+.sender img {
+    transform: rotate(180deg);
+}
+.mine .message-txt:after {
+    left: -12px;
+    right: unset;
+    transform: rotate(212deg);
+    top: 3px;
+}
+.other .message-txt:after {
+    right: -3px;
+    left: unset;
+    top: -8px;
+    transform: rotate(-42deg);
+}
+.location-change {
+    left: unset;
+    right: 3%;
+}
+@media (max-width: 992px){
+    .user-tab ul {
+        right: unset;
+        left:0;
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 576px){
+    .card-info {
+        align-items: center;
+    }
+}
+
